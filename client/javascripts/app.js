@@ -140,9 +140,9 @@ var main = function (toDoObjects) {
 	
 	//when socket signals a new to do item. update tabs
 	    socket.on("vnewToDo", function(data) {
-        var $oldToDos = $("#ol");
-		var $newToDos = $("#nl");
-        var $toDoTags = $("#tl");
+        var $oldToDos = $("#old");
+		var $newToDos = $("#new");
+        var $toDoTags = $("#tags");
         var $data = data.description;
         var $tags = data.tags;
         var $NTD = $("<li>").text($data).hide();
